@@ -388,7 +388,7 @@ export default {
       };
       console.log(this.recipes);
       this.isModalVisible = false;
-      fetch("http://127.0.0.1:8000/api/savemealplan/", {
+      fetch("https://philipgullberg.pythonanywhere.com/api/savemealplan/", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -404,7 +404,7 @@ export default {
       console.log(JSON.stringify(this.formData));
       this.loading = true;
       console.log(this.loading);
-      await fetch("http://127.0.0.1:8000/api/", {
+      await fetch("https://philipgullberg.pythonanywhere.com/api/", {
         method: "POST",
         credentials: "include",
         headers: {
