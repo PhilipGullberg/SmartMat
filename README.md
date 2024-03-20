@@ -3,7 +3,7 @@
 ## A website where you can plan your weeks meals with a few easy clicks, using AI to build your recipes
 ## Save, share and reuse recipes written by AI (trained as the perfect chef!)
 
-!(SmartMatPlanerare_landing.png)[Image of landing page]
+![Image of landing page](SmartMatPlanerare_landing.png)
 
 ## Project setup
 ```
