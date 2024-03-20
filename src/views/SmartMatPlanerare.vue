@@ -388,7 +388,7 @@ export default {
       };
       console.log(this.recipes);
       this.isModalVisible = false;
-      fetch("https://philipgullberg.pythonanywhere.com/api/savemealplan/", {
+      fetch("https://jellyfish-app-42zln.ondigitalocean.app/api/savemealplan/", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -404,7 +404,7 @@ export default {
       console.log(JSON.stringify(this.formData));
       this.loading = true;
       console.log(this.loading);
-      await fetch("https://philipgullberg.pythonanywhere.com/api/", {
+      await fetch("https://jellyfish-app-42zln.ondigitalocean.app/api/", {
         method: "POST",
         credentials: "include",
         headers: {
