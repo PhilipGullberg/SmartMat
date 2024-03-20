@@ -1,5 +1,5 @@
 # Frontend for the website "Smartmatplanerare"
-
+### Preview: https://smart-mat.vercel.app/ 
 ## A website where you can plan your weeks meals with a few easy clicks, using AI to build your recipes
 ### Save, share and reuse recipes written by AI (trained as the perfect chef!)
 
