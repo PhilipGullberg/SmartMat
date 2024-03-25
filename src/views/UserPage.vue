@@ -187,7 +187,7 @@ export default {
       alert("Kopierat alla ingredienser");
     },
     exportIngredientModal(selectedMealPlan) {
-      fetch("http://127.0.0.1:8000/api/export_ingredients/", {
+      fetch("https://jellyfish-app-42zln.ondigitalocean.app/api/export_ingredients/", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -213,7 +213,7 @@ export default {
       this.isModalVisible = true;
     },
     get_recipes() {
-      fetch("http://127.0.0.1:8000/api/get_mealplans/", {
+      fetch("https://jellyfish-app-42zln.ondigitalocean.app/api/get_mealplans/", {
         method: "POST",
         credentials: "include",
         headers: {
