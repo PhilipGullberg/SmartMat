@@ -1,4 +1,4 @@
-const DEFAULT_ROUTE = "http://127.0.0.1:8000/api/";
+const DEFAULT_ROUTE = "https://jellyfish-app-42zln.ondigitalocean.app/api";
 
 export const apiRoutes = {
   users: DEFAULT_ROUTE + "users/",
