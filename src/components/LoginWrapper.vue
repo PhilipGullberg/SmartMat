@@ -7,7 +7,7 @@
       <div class="text">Logga in</div>
       <MainInput
         autoFocus="true"
-        v-model="input.email"
+        v-model="input.username"
         placeholder="Email..."
       />
       <MainInput
@@ -26,7 +26,7 @@
     <div class="login-container" v-if="!login && !loginOpen.user">
       <div class="text">Skapa konto</div>
       <MainInput v-model="input.name" autoFocus="true" placeholder="Name..." />
-      <MainInput v-model="input.email" placeholder="Email..." />
+      <MainInput v-model="input.username" placeholder="Email..." />
       <MainInput
         v-model="input.password"
         placeholder="Password"
@@ -56,16 +56,16 @@ import MainInput from "./MainInput.vue";
 const login = false;
 const input = {
   name: "",
-  email: "",
+  username: "",
   password: "",
 };
 
 async function onConfirmInput() {
-  const { email, password, name } = input;
-  if (email.length && password.length && name.length) {
+  const { username, password, name } = input;
+  if (username.length && password.length && name.length) {
     const result = await fetch(apiRoutes.users, {
       method: "POST",
-      body: JSON.stringify({ email, password, name }),
+      body: JSON.stringify({ username, password, name }),
     });
 
     localStorage.setItem("user", await result.text());
