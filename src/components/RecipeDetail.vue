@@ -41,7 +41,7 @@ export default {
   },
   methods:{
     get_recipe(id) {
-         fetch("http://127.0.0.1:8000/api/get_recipe/", {
+         fetch("https://jellyfish-app-42zln.ondigitalocean.app/api/get_recipe/", {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
@@ -63,7 +63,7 @@ export default {
     },
     save_recipe(id){
         //skicka med till user också
-        fetch("http://127.0.0.1:8000/api/save_recipe/", {
+        fetch("https://jellyfish-app-42zln.ondigitalocean.app/api/save_recipe/", {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
